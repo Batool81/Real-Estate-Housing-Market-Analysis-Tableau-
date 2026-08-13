@@ -14,7 +14,7 @@ This project provides actionable insights into housing market behavior using Tab
 The Tableau workbook (`Real Estate & Housing Market.twb`) comprises 7 analytical sheets assembled into an interactive main dashboard (**`Dashboard 1`**):
 
 *  Price Distribution (`price Distribution`):** Binned frequency distribution highlighting price concentration across market segments.
-*  Bedroom & 🛁 Bathroom Distributions:** Categorical breakdowns displaying the structural inventory of homes sold.
+*  Bedroom & Bathroom Distributions:** Categorical breakdowns displaying the structural inventory of homes sold.
 *  View vs. Condition Matrix (`View&Condation`):** A matrix heatmap correlating property physical condition with aesthetic view ratings.
 *  Price Trend Analysis (`Line chart`):** Time-series chart tracking daily average sale price movements across the dataset timeline.
 *  Sales Calendar Heatmap (`Calendar`):** Calendar visualization mapping daily sales performance by week and day of the week.
