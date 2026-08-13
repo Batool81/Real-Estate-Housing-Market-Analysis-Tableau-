@@ -21,8 +21,36 @@ The Tableau workbook (`Real Estate & Housing Market.twb`) comprises 7 analytical
 *  Geographical Map (`Map`): Coordinate-based map plotting property locations (`latitude`/`longitude`) across 70 zip codes to identify high-value geographic hubs.
 
 ---
+##  Dashboard Preview
+![Real Estate Dashboard Preview](images/dashboard_preview.png)
 
-##  Dataset Summary
+##  Dashboard Design & Interactivity
+
+The main dashboard (**`Dashboard 1`**) is structured logically into three visual regions:
+
+### 1. Interactive Control Panel (Left Pane)
+* Date Filter: Dropdown filter to isolate specific months/years (e.g., *September 2014*).
+* Range Sliders:Interactive range sliders for **Year Built** (`1900–2015`), **Average Sqft Living**, and **Average Sqft Lot**.
+* Calendar Heatmap: Highlights active selling days by week number (`Week 36 – Week 40`) and day of the week, allowing users to cross-filter the rest of the dashboard by selecting specific calendar dates.
+
+### 2. Geographic & Time-Series Overview (Top Center/Right)
+* Spatial Analysis Map: Geographic map displaying regional price clusters across King County, WA zip codes.
+* Daily Average Price Trend: Line chart tracking daily price fluctuations (`Avg. Price` vs. `Day of Month`).
+
+### 3. Feature Distributions & Quality Heatmap (Bottom)
+* Price Distribution Histogram: Binned bar chart showcasing price distribution skewness ($400k–$1.2M+).
+* View vs. Condition Matrix: Highlight table/heatmap mapping **View Ratings** (*Excellent, Good, No View*) against **Condition Ratings** (*Fair, Good, Very Good*) to evaluate property premiums.
+* Structural Distributions:Binned bar charts analyzing inventory by **Bathroom** and **Bedroom** counts.
+
+
+## Key Business Insights
+
+1. Price Skewness:Most home sales are concentrated between **$300,000 and $600,000**, with a sharp drop-off above $800,000.
+2. Optimal Home Configuration: The highest volume of sales occurs in homes with **3 to 4 bedrooms** and **2 to 2.5 bathrooms**.
+3. View & Condition Premium: Properties with an **"Excellent" view** command significantly higher total sales values even when the condition is average, proving location aesthetics strongly outweigh minor wear-and-tear.
+4. Seasonal / Calendar Peaks: Calendar cross-filtering reveals that weekday sales activity spikes significantly mid-week (Wednesdays and Thursdays) compared to weekends.
+
+ ##  Dataset Summary
 
 * Dataset File: `HouseData.xlsx`
 * Total Records: 21,060 home sales transactions
@@ -30,4 +58,3 @@ The Tableau workbook (`Real Estate & Housing Market.twb`) comprises 7 analytical
 * Average Sale Price: $500,270 (Median: $445,000 | Range: $75,000 – $1,495,000)
 * Average Living Area: 2,019 sq. ft.
 * Geography: King County area (70 zip codes)
-
